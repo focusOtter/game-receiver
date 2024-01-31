@@ -1,0 +1,11 @@
+{
+  "ReceiveGameUpdateBackendStack": {
+    "UserPoolClientId": "1q1lldfkaam2tlp46ee04hju57",
+    "appsyncapiarn": "arn:aws:appsync:us-east-1:842537737558:apis/gv6qzkyu4vfsbgvqy3zgjajjyy",
+    "cfngraphqlarn": "arn:aws:appsync:us-east-1:842537737558:endpoints/graphql-api/usf7pf5jtfc6fonuwh7nzfboee",
+    "UserPoolId": "us-east-1_JE6wj8szh",
+    "GraphQLAPIURL": "https://usf7pf5jtfc6fonuwh7nzfboee.appsync-api.us-east-1.amazonaws.com/graphql",
+    "Region": "us-east-1",
+    "IdentityPoolId": "us-east-1:c486f1ec-f775-4cee-9d3e-b523c8d1cea8"
+  }
+}

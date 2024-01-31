@@ -1,0 +1,34 @@
+type Query {
+	noop: String
+}
+
+# Called by EventBridge from a Rule
+type Mutation {
+	publishMsgFromEB(input: GameInput!): Game! @aws_iam
+}
+
+type Subscription {
+	onPublishMsgFromEb: Game
+		@aws_cognito_user_pools
+		@aws_subscribe(mutations: ["publishMsgFromEB"])
+}
+
+type Game {
+	id: ID!
+	createdAt: AWSDateTime!
+	updatedAt: AWSDateTime!
+	name: String!
+	homeTeamScore: Int!
+	awayTeamScore: Int!
+	currentMessage: String!
+}
+
+input GameInput {
+	id: ID!
+	createdAt: AWSDateTime!
+	updatedAt: AWSDateTime!
+	name: String!
+	homeTeamScore: Int!
+	awayTeamScore: Int!
+	currentMessage: String!
+}
