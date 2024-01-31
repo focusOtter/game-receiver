@@ -2,6 +2,8 @@
 
 Welcome to the Game Receiver repository, an innovative application designed to showcase the seamless integration between AWS EventBridge and AWS AppSync for real-time data communication across different domains. This project highlights a new feature allowing EventBridge rules to directly call AppSync endpoints, facilitating real-time updates and data synchronization.
 
+This post is designed to work with the [Event Broadcast application](https://github.com/focusOtter/game-brodcaster/blob/main/README.md)
+
 ## Getting Started
 
 Before diving into the Game Receiver, we highly recommend checking out the [EventBridge Target AppSync Repository](https://github.com/focusOtter/eventbridge-target-appsync). This repository provides a general walkthrough and foundational knowledge necessary for understanding the integration and setup required to make the most out of the Game Receiver application.
@@ -43,6 +45,8 @@ Before diving into the Game Receiver, we highly recommend checking out the [Even
 ## Usage
 
 Once deployed, the Game Receiver will listen for events broadcasted by the Game Broadcaster. These events are captured in real-time, thanks to the direct communication between EventBridge and AppSync. The application processes and displays these events, showcasing the power of real-time data synchronization across different domains.
+
+This post is designed to work with the [Event Broadcast application](https://github.com/focusOtter/game-brodcaster/blob/main/README.md)
 
 ## Support
 
